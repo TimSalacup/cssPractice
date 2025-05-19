@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <nav>
@@ -66,7 +67,7 @@
     </nav>
     <header>
       <div class="header__wrapper">
-        <h1 class="header__h1">
+        <h1 class="header__h1 albert--sans">
           The most powerful tool to design and ship your apps.
         </h1>
         <p class="header__para gray">
@@ -78,16 +79,16 @@
     </header>
     <main>
       <div class="main__wrapper">
-        <section class="main__video--w--desc">
-          <video class="main__video" controls>
-            <source src="./assets/fillerVideo.mp4" class="main__video" />
+        <section class="main__video--w--desc section-bg">
+          <video class="main__video video" loop muted playsinline>
+            <source src="./assets/fillerVideo.mp4" />
           </video>
           <div class="main__video--description">
             <div class="main__desc--title">
               <h2 class="main__desc--title--text albert--sans">
                 Play to <span class="blue--gradient">Xcode</span>
               </h2>
-                <div class="beta--symbol albert--sans">BETA</div>
+              <div class="beta--symbol albert--sans">BETA</div>
             </div>
             <h2 class="main__desc--para albert--sans">
               Ship your projects in Play to the App Store and seamlessly
@@ -100,6 +101,36 @@
                 alt=""
                 class="arrow"
             /></a>
+          </div>
+        </section>
+        <section id="section2">
+          <h1 class="section2__title albert--sans">
+            Don't be limited by your traditional design tools.
+          </h1>
+          <div class="section2__tabs">
+            <span class="design section2__tab active">Design</span>
+            <span class="prototype section2__tab">Prototype</span>
+            <span class="share section2__tab">Share</span>
+            <span class="ship section2__tab">Ship</span>
+          </div>
+          <div class="section2__content">
+            <div class="section2__content--description">
+              <span class="section2__content--title albert--sans"></span>
+              <span class="section2__content--para albert--sans"
+                ></span
+              >
+            </div>
+            <video class="section2__video video" loop muted playsinline>
+              <source src="./assets/fillerVideo2.mp4" id="section2__video--source"/>
+            </video>
+            <figure class="section2__content--phone">
+              <img src="https://framerusercontent.com/images/vEbkNTuqJbHt5mWbkITTtkqfruk.png?scale-down-to=1024" class="section2__content--phone" alt="">
+            </figure>
+            <div class="section2__phone--video--container">
+              <video class="phone__video video" loop muted playsinline>
+                <source src="./assets/fillerVideo3.mp4" id="phone__video--source">
+              </video>
+            </div>
           </div>
         </section>
       </div>
