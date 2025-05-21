@@ -365,3 +365,99 @@ section {
   height: 100%;
   transform: translateX(-304px);
 }
+
+.section2__carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 144px 0px;
+  width: 100%;
+}
+
+.section2__carousel--title {
+  text-align: center;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section2__carousel--wheel{
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 64px;
+  margin-top: 32px;
+}
+
+.logo--list {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  animation: slideRight 60s linear infinite;
+  z-index: 0;
+}
+
+.logo--list--item {
+  list-style-type: none;
+}
+
+.carousel__item {
+  height: 32px;
+  margin-right: 48px;
+}
+
+.spotify {
+  height: 48px;
+}
+
+.dLogo, .pLogo, .cred, .pinterest, .snapchat {
+  height: 48px;
+}
+
+.hims {
+  height: 96px;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1364px);
+  }
+}
+
+.section2__carousel--frame {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.fader1 {
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0, 0.5) 90%,
+    transparent 100%
+  );
+  height: 100%;
+  width: 20%;
+  z-index: 10;
+}
+
+.fader2 {
+  background: linear-gradient(
+    to left,
+    rgb(0, 0, 0) 0%,
+    rgb(0, 0, 0, 0.5) 90%,
+    transparent 100%
+  );
+  height: 100%;
+  width: 20%;
+  z-index: 10;
+}
